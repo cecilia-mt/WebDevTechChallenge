@@ -63,7 +63,7 @@ Template Name: Testimonials Page
 
 							$testimonials_args = array (
 								'post_type' => 'testimonials',
-								'posts_per_page' => 6, // Line changed to see six testimonials per page 
+								'posts_per_page' => -1,
 								'orderby' => 'date',
 								'order' => 'DESC'
 							);
