@@ -390,6 +390,16 @@ function bones_register_sidebars() {
     'after_title' => '</h2>',
   ));
 
+  register_sidebar(array( //  New sidebar, title is an h3 with the class "module__title" , name and description must be translatable and have "safe2choose-test" as the value for the domain parameter.
+    'id' => 'safe2choose-test',
+    'name' => __( 'Advertising Sidebar', 'bonestheme' ),
+    'description' => __( 'The advertising sidebar.', 'bonestheme' ),
+    'before_widget' => '<div id="%1$s" class="module module--primary cf %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="h3 module__title">',
+    'after_title' => '</h3>',
+  ));
+
   
 } // don't remove this bracket!
 
