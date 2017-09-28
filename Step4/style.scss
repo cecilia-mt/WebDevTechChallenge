@@ -1,8 +1,8 @@
-$bg_body: ;
-$bg_main: ;
-$bg_box_start: ;
-$color_box_start: ;
-$border_color: ;
+$bg_body: #eeeeee;
+$bg_main: rgba(255, 255, 255, 0.7);
+$bg_box_start:#60BDAF;
+$color_box_start: #000;
+$border_color: #000;
 $number_of_items: 4;
 
 * {
@@ -19,6 +19,7 @@ body {
 	padding: 2% 5%;
 	margin: 20px auto;
 	background-color: $bg_main;
+	box-shadow: 0 0 5px rgba(107, 110, 112, 0.4);
 }
 
 h1 {
@@ -35,8 +36,8 @@ h1 {
 
 @for $i from 1 through $number-of-items {
 	#main div:nth-of-type(#{$i}) {
-		background-color: ;
-		color: ;
+		background-color: darken($bg_box_start, $i * 5);
+		color: lighten($color_box_start, $i * 25);
 	}
 }
 
