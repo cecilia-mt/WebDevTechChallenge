@@ -45,7 +45,6 @@ var url = window.location.href;
       offlineGreeting = "Our counselors are not available at the moment, please leave a message and we will contact you soon";
       department = "english";  
       break;
-
    }
 
  $zopim(function() {
