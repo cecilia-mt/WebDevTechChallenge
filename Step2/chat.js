@@ -23,19 +23,19 @@ var url = window.location.href;
       department = "portuguese";
       break;
 
-    case "fr":
+    case "fr": 
       onlineGreeting = 'Parlez-nous';
       offlineGreeting = 'Nos conseillers ne sont pas disponibles pour le moment, veuillez laisser un message et nous vous contacterons bientôt';
       department = "french";
       break;
 
-    case "ch":
+    case "ch": // New language
       onlineGreeting = '跟我們說話';
       offlineGreeting = '我們的顧問目前不可用，請留言，我們將盡快回复您';
       department = "chinese"
       break;
 
-    case "rs":
+    case "rs": // New language
       onlineGreeting = 'Поговорите с нами';
       offlineGreeting = 'Наши консультанты в настоящее время недоступны, пожалуйста, оставьте сообщение, и мы скоро свяжемся с вами';
       break;
